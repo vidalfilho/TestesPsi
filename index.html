@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autodiagnóstico de Gestão de Estresse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .feedback {
+            font-weight: bold;
+            color: #0056b3;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: #0056b3;
+            color: white;
+        }
+        .close-btn {
+            background-color: #7f8c8d;
+            color: white;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Autodiagnóstico de Gestão de Estresse</h1>
+    <p>
+        Este teste foi desenvolvido para ajudar você a refletir sobre como o estresse impacta sua vida. Responda as perguntas com honestidade. 
+        Lembre-se, este teste não substitui a avaliação de um profissional.
+    </p>
+
+    <form id="stressTest">
+        <!-- Questão 1 -->
+        <div class="question">
+            <label>1. Com que frequência você sente que está sobrecarregado pelas demandas do dia a dia?</label><br>
+            <input type="radio" name="q1" value="0"> Nunca<br>
+            <input type="radio" name="q1" value="1"> Raramente<br>
+            <input type="radio" name="q1" value="2"> Às vezes<br>
+            <input type="radio" name="q1" value="3"> Frequentemente<br>
+            <input type="radio" name="q1" value="4"> Sempre<br>
+        </div>
+
+        <!-- Questão 2 -->
+        <div class="question">
+            <label>2. Você percebe sinais físicos de estresse, como dores musculares ou problemas digestivos?</label><br>
+            <input type="radio" name="q2" value="0"> Nunca<br>
+            <input type="radio" name="q2" value="1"> Raramente<br>
+            <input type="radio" name="q2" value="2"> Às vezes<br>
+            <input type="radio" name="q2" value="3"> Frequentemente<br>
+            <input type="radio" name="q2" value="4"> Sempre<br>
+        </div>
+        <!-- Questão 3 -->
+        <div class="question">
+            <label>3. Você sente dificuldade em relaxar, mesmo quando tem tempo livre?</label><br>
+            <input type="radio" name="q3" value="0"> Nunca<br>
+            <input type="radio" name="q3" value="1"> Raramente<br>
+            <input type="radio" name="q3" value="2"> Às vezes<br>
+            <input type="radio" name="q3" value="3"> Frequentemente<br>
+            <input type="radio" name="q3" value="4"> Sempre<br>
+        </div>
+
+        <!-- Questão 4 -->
+        <div class="question">
+            <label>4. Você sente que suas responsabilidades afetam negativamente seu sono?</label><br>
+            <input type="radio" name="q4" value="0"> Nunca<br>
+            <input type="radio" name="q4" value="1"> Raramente<br>
+            <input type="radio" name="q4" value="2"> Às vezes<br>
+            <input type="radio" name="q4" value="3"> Frequentemente<br>
+            <input type="radio" name="q4" value="4"> Sempre<br>
+        </div>
+        <!-- Questão 5 -->
+        <div class="question">
+            <label>5. Com que frequência você sente dificuldade em priorizar tarefas importantes?</label><br>
+            <input type="radio" name="q5" value="0"> Nunca<br>
+            <input type="radio" name="q5" value="1"> Raramente<br>
+            <input type="radio" name="q5" value="2"> Às vezes<br>
+            <input type="radio" name="q5" value="3"> Frequentemente<br>
+            <input type="radio" name="q5" value="4"> Sempre<br>
+        </div>
+
+        <!-- Questão 6 -->
+        <div class="question">
+            <label>6. Quando enfrenta contratempos, você se sente incapaz de lidar com eles?</label><br>
+            <input type="radio" name="q6" value="0"> Nunca<br>
+            <input type="radio" name="q6" value="1"> Raramente<br>
+            <input type="radio" name="q6" value="2"> Às vezes<br>
+            <input type="radio" name="q6" value="3"> Frequentemente<br>
+            <input type="radio" name="q6" value="4"> Sempre<br>
+        </div>
+        <!-- Questão 7 -->
+        <div class="question">
+            <label>7. Você sente que seu estresse afeta suas relações pessoais?</label><br>
+            <input type="radio" name="q7" value="0"> Nunca<br>
+            <input type="radio" name="q7" value="1"> Raramente<br>
+            <input type="radio" name="q7" value="2"> Às vezes<br>
+            <input type="radio" name="q7" value="3"> Frequentemente<br>
+            <input type="radio" name="q7" value="4"> Sempre<br>
+        </div>
+
+        <!-- Questão 8 -->
+        <div class="question">
+            <label>8. Você evita situações desafiadoras por medo do estresse?</label><br>
+            <input type="radio" name="q8" value="0"> Nunca<br>
+            <input type="radio" name="q8" value="1"> Raramente<br>
+            <input type="radio" name="q8" value="2"> Às vezes<br>
+            <input type="radio" name="q8" value="3"> Frequentemente<br>
+            <input type="radio" name="q8" value="4"> Sempre<br>
+        </div>
+        <!-- Questão 9 -->
+        <div class="question">
+            <label>9. Você sente que não tem controle sobre sua carga de trabalho?</label><br>
+            <input type="radio" name="q9" value="0"> Nunca<br>
+            <input type="radio" name="q9" value="1"> Raramente<br>
+            <input type="radio" name="q9" value="2"> Às vezes<br>
+            <input type="radio" name="q9" value="3"> Frequentemente<br>
+            <input type="radio" name="q9" value="4"> Sempre<br>
+        </div>
+
+        <!-- Questão 10 -->
+        <div class="question">
+            <label>10. Você sente que seu estresse está prejudicando sua saúde geral?</label><br>
+            <input type="radio" name="q10" value="0"> Nunca<br>
+            <input type="radio" name="q10" value="1"> Raramente<br>
+            <input type="radio" name="q10" value="2"> Às vezes<br>
+            <input type="radio" name="q10" value="3"> Frequentemente<br>
+            <input type="radio" name="q10" value="4"> Sempre<br>
+        </div>
+        <button type="button" class="submit-btn" onclick="calculateResult()">Enviar</button>
+        <button type="button" class="close-btn" onclick="exitTest()">Fechar</button>
+
+        <div id="result" class="feedback"></div>
+
+        <script>
+            function calculateResult() {
+                const form = document.getElementById('stressTest');
+                let score = 0;
+
+                for (let i = 1; i <= 10; i++) {
+                    const question = form.querySelector(`input[name="q${i}"]:checked`);
+                    if (question) score += parseInt(question.value);
+                }
+
+                let feedback = '';
+                if (score <= 10) {
+                    feedback = "Seu estresse está sob controle. Continue cuidando de sua saúde emocional.";
+                } else if (score <= 20) {
+                    feedback = "Você apresenta sinais moderados de estresse. Considere ajustar sua rotina.";
+                } else if (score <= 30) {
+                    feedback = "O estresse está afetando significativamente sua vida. Busque estratégias de enfrentamento.";
+                } else {
+                    feedback = "O estresse está muito elevado. É importante buscar ajuda profissional.";
+                }
+
+                document.getElementById('result').innerText = feedback;
+            }
+
+            function exitTest() {
+                window.close();
+            }
+        </script>
+    </form>
+</body>
+</html>
